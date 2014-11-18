@@ -10,6 +10,4 @@ D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\Daimler.NX.BoolGeo
 D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\Abzuggeometrie.csproj.GenerateResource.Cache
 D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\BoolGeometrie.dll
 D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\BoolGeometrie.pdb
-D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\bin\Debug\NPlant.dll
-D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\bin\Debug\NPlant.Samples.dll
-D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\Abzuggeometrie.csprojResolveAssemblyReference.cache
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\bin\Debug\BoolGeometrie.XML

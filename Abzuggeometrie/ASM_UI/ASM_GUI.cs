@@ -33,16 +33,28 @@ using NXOpen.Features;
 
 namespace Daimler.NX.BoolGeometrie
 {
+	/// <summary>
+	/// ASM_GUI
+	/// </summary>
 	public class ASM_GUI
 
 	{
 	private const string RniPartType = "RNI_PARTTYPE";
 
 	//class members
+	/// <summary>
+	/// The session
+	/// </summary>
 	public static Session theSession = null;
 
+	/// <summary>
+	/// The nxobject
+	/// </summary>
 	public static NXObject nxobject = null;
 
+	/// <summary>
+	/// The UI
+	/// </summary>
 	public static UI theUI = null;
 	private string theDlxFileName;
 	private string ownDllLocation;
@@ -59,42 +71,130 @@ namespace Daimler.NX.BoolGeometrie
 	//------------------------------------------------------------------------------
 	//Bit Option for Property: SnapPointTypesEnabled
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// The snap point types enabled_ user defined
+	/// </summary>
 	public static readonly int              SnapPointTypesEnabled_UserDefined = (1 << 0);
+	/// <summary>
+	/// The snap point types enabled_ inferred
+	/// </summary>
 	public static readonly int                 SnapPointTypesEnabled_Inferred = (1 << 1);
+	/// <summary>
+	/// The snap point types enabled_ screen position
+	/// </summary>
 	public static readonly int           SnapPointTypesEnabled_ScreenPosition = (1 << 2);
+	/// <summary>
+	/// The snap point types enabled_ end point
+	/// </summary>
 	public static readonly int                 SnapPointTypesEnabled_EndPoint = (1 << 3);
+	/// <summary>
+	/// The snap point types enabled_ mid point
+	/// </summary>
 	public static readonly int                 SnapPointTypesEnabled_MidPoint = (1 << 4);
+	/// <summary>
+	/// The snap point types enabled_ control point
+	/// </summary>
 	public static readonly int             SnapPointTypesEnabled_ControlPoint = (1 << 5);
+	/// <summary>
+	/// The snap point types enabled_ intersection
+	/// </summary>
 	public static readonly int             SnapPointTypesEnabled_Intersection = (1 << 6);
+	/// <summary>
+	/// The snap point types enabled_ arc center
+	/// </summary>
 	public static readonly int                SnapPointTypesEnabled_ArcCenter = (1 << 7);
+	/// <summary>
+	/// The snap point types enabled_ quadrant point
+	/// </summary>
 	public static readonly int            SnapPointTypesEnabled_QuadrantPoint = (1 << 8);
+	/// <summary>
+	/// The snap point types enabled_ existing point
+	/// </summary>
 	public static readonly int            SnapPointTypesEnabled_ExistingPoint = (1 << 9);
+	/// <summary>
+	/// The snap point types enabled_ pointon curve
+	/// </summary>
 	public static readonly int             SnapPointTypesEnabled_PointonCurve = (1 <<10);
+	/// <summary>
+	/// The snap point types enabled_ pointon surface
+	/// </summary>
 	public static readonly int           SnapPointTypesEnabled_PointonSurface = (1 <<11);
+	/// <summary>
+	/// The snap point types enabled_ point constructor
+	/// </summary>
 	public static readonly int         SnapPointTypesEnabled_PointConstructor = (1 <<12);
+	/// <summary>
+	/// The snap point types enabled_ twocurve intersection
+	/// </summary>
 	public static readonly int     SnapPointTypesEnabled_TwocurveIntersection = (1 <<13);
+	/// <summary>
+	/// The snap point types enabled_ tangent point
+	/// </summary>
 	public static readonly int             SnapPointTypesEnabled_TangentPoint = (1 <<14);
+	/// <summary>
+	/// The snap point types enabled_ poles
+	/// </summary>
 	public static readonly int                    SnapPointTypesEnabled_Poles = (1 <<15);
+	/// <summary>
+	/// The snap point types enabled_ bounded grid point
+	/// </summary>
 	public static readonly int         SnapPointTypesEnabled_BoundedGridPoint = (1 <<16);
 	//------------------------------------------------------------------------------
 	//Bit Option for Property: SnapPointTypesOnByDefault
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// The snap point types on by default_ end point
+	/// </summary>
 	public static readonly int             SnapPointTypesOnByDefault_EndPoint = (1 << 3);
+	/// <summary>
+	/// The snap point types on by default_ mid point
+	/// </summary>
 	public static readonly int             SnapPointTypesOnByDefault_MidPoint = (1 << 4);
+	/// <summary>
+	/// The snap point types on by default_ control point
+	/// </summary>
 	public static readonly int         SnapPointTypesOnByDefault_ControlPoint = (1 << 5);
+	/// <summary>
+	/// The snap point types on by default_ intersection
+	/// </summary>
 	public static readonly int         SnapPointTypesOnByDefault_Intersection = (1 << 6);
+	/// <summary>
+	/// The snap point types on by default_ arc center
+	/// </summary>
 	public static readonly int            SnapPointTypesOnByDefault_ArcCenter = (1 << 7);
+	/// <summary>
+	/// The snap point types on by default_ quadrant point
+	/// </summary>
 	public static readonly int        SnapPointTypesOnByDefault_QuadrantPoint = (1 << 8);
+	/// <summary>
+	/// The snap point types on by default_ existing point
+	/// </summary>
 	public static readonly int        SnapPointTypesOnByDefault_ExistingPoint = (1 << 9);
+	/// <summary>
+	/// The snap point types on by default_ pointon curve
+	/// </summary>
 	public static readonly int         SnapPointTypesOnByDefault_PointonCurve = (1 <<10);
+	/// <summary>
+	/// The snap point types on by default_ pointon surface
+	/// </summary>
 	public static readonly int       SnapPointTypesOnByDefault_PointonSurface = (1 <<11);
+	/// <summary>
+	/// The snap point types on by default_ point constructor
+	/// </summary>
 	public static readonly int     SnapPointTypesOnByDefault_PointConstructor = (1 <<12);
+	/// <summary>
+	/// The snap point types on by default_ bounded grid point
+	/// </summary>
 	public static readonly int     SnapPointTypesOnByDefault_BoundedGridPoint = (1 <<16);
 	
 	//------------------------------------------------------------------------------
 	//Constructor for NX Styler class
 	//------------------------------------------------------------------------------
-  
+
+	/// <summary>
+	/// Initializes a new instance of the <see cref="ASM_GUI"/> class.
+	/// </summary>
+	/// <param name="session">The session.</param>
 	public ASM_GUI(Session session)
 	{
 		try
@@ -159,6 +259,10 @@ namespace Daimler.NX.BoolGeometrie
 	//------------------------------------------------------------------------------
 	//This method shows the dialog on the screen
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Shows this instance.
+	/// </summary>
+	/// <returns></returns>
 	public NXOpen.UIStyler.DialogResponse Show()
 	{
 		try
@@ -176,6 +280,9 @@ namespace Daimler.NX.BoolGeometrie
 	//------------------------------------------------------------------------------
 	//Method Name: Dispose
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Releases unmanaged and - optionally - managed resources.
+	/// </summary>
 	public void Dispose()
 	{
 		if(theDialog != null)
@@ -192,6 +299,9 @@ namespace Daimler.NX.BoolGeometrie
 	//------------------------------------------------------------------------------
 	//Callback Name: initialize_cb
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Initialize_cbs this instance.
+	/// </summary>
 	public void initialize_cb()
 	{
 		try
@@ -215,6 +325,9 @@ namespace Daimler.NX.BoolGeometrie
 	//This callback is executed just before the dialog launch. Thus any value set 
 	//here will take precedence and dialog will be launched showing that value. 
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Dialogs the shown_cb.
+	/// </summary>
 	public void dialogShown_cb()
 	{
 		try
@@ -235,6 +348,10 @@ namespace Daimler.NX.BoolGeometrie
 	//------------------------------------------------------------------------------
 	//Callback Name: apply_cb
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Apply_cbs this instance.
+	/// </summary>
+	/// <returns></returns>
 	public int apply_cb()
 	{
 		int errorCode = 0;
@@ -256,6 +373,11 @@ namespace Daimler.NX.BoolGeometrie
 	//------------------------------------------------------------------------------
 	//Callback Name: update_cb
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Update_cbs the specified block.
+	/// </summary>
+	/// <param name="block">The block.</param>
+	/// <returns></returns>
 	public int update_cb( NXOpen.BlockStyler.UIBlock block)
 	{
 		try
@@ -298,6 +420,10 @@ namespace Daimler.NX.BoolGeometrie
 	//------------------------------------------------------------------------------
 	//Callback Name: ok_cb
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Ok_cbs this instance.
+	/// </summary>
+	/// <returns></returns>
 	public int ok_cb()
 	{
 		int errorCode = 0;
@@ -318,6 +444,10 @@ namespace Daimler.NX.BoolGeometrie
 	//------------------------------------------------------------------------------
 	//Callback Name: cancel_cb
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Cancel_cbs this instance.
+	/// </summary>
+	/// <returns></returns>
 	public int cancel_cb()
 	{
 		try
@@ -336,6 +466,11 @@ namespace Daimler.NX.BoolGeometrie
 	//Callback Name: focusNotify_cb
 	//This callback is executed when any block (except the ones which receive keyboard entry such as Integer block) receives focus.
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Focuses the notify_cb.
+	/// </summary>
+	/// <param name="block">The block.</param>
+	/// <param name="focus">if set to <c>true</c> [focus].</param>
 	public void focusNotify_cb(NXOpen.BlockStyler.UIBlock block, bool focus)
 	{
 		try
@@ -353,6 +488,11 @@ namespace Daimler.NX.BoolGeometrie
 	//Callback Name: keyboardFocusNotify_cb
 	//This callback is executed when block which can receive keyboard entry, receives the focus.
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Keyboards the focus notify_cb.
+	/// </summary>
+	/// <param name="block">The block.</param>
+	/// <param name="focus">if set to <c>true</c> [focus].</param>
 	public void keyboardFocusNotify_cb(NXOpen.BlockStyler.UIBlock block, bool focus)
 	{
 		try
@@ -370,6 +510,10 @@ namespace Daimler.NX.BoolGeometrie
 	//Callback Name: enableOKButton_cb
 	//This callback allows the dialog to enable/disable the OK and Apply button.
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Enables the ok button_cb.
+	/// </summary>
+	/// <returns></returns>
 	public bool enableOKButton_cb()
 	{
 		bool enableOkButton = true;
@@ -390,6 +534,11 @@ namespace Daimler.NX.BoolGeometrie
 	//Function Name: GetBlockProperties
 	//Returns the propertylist of the specified BlockID
 	//------------------------------------------------------------------------------
+	/// <summary>
+	/// Gets the block properties.
+	/// </summary>
+	/// <param name="blockID">The block identifier.</param>
+	/// <returns></returns>
 	public PropertyList GetBlockProperties(string blockID)
 	{
 		PropertyList plist =null;
@@ -494,11 +643,13 @@ namespace Daimler.NX.BoolGeometrie
 	//================== Boolean_Operation mit "WaveLink" Bodies ===================================
 	//===================================================================================================
 
-	/// <summary>Get selected Bodies greate a WaveLink to Target_Part .</summary>
-	/// <param name="i">Counter of Remove Body.</param>
-	/// <param name="e">Counter of Target component.</param>
-	/// </param>
-	/// <returns>void.</returns>
+
+	/// <summary>
+	/// Sets the unite.
+	/// </summary>
+	/// <param name="i">The i.</param>
+	/// <param name="e">The e.</param>
+	/// <exception cref="System.Exception">Create or edit of a Feature was recorded in History Mode but playback is in History-Free Mode.</exception>
 	public static void SetUnite(int i, int e)
 	{
 
@@ -696,10 +847,12 @@ namespace Daimler.NX.BoolGeometrie
 	//================== InputBody kopieren mit Link "WaveLink" =========================================
 	//===================================================================================================
 
-	/// <summary>Get selected Bodies greate a WaveLink to Target_Part .</summary>
-	/// <param name="i">Counter of component.</param>
-	/// </param>
-	/// <returns>void.</returns>
+
+	/// <summary>
+	/// Sets the wave link.
+	/// </summary>
+	/// <param name="i">The i.</param>
+	/// <exception cref="System.Exception">Create or edit of a Feature was recorded in History Mode but playback is in History-Free Mode.</exception>
 	public static void SetWaveLink(int i)
 	{
 

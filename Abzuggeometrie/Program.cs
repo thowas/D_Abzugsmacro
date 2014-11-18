@@ -14,7 +14,9 @@ using NXOpen;
 
 namespace Daimler.NX.BoolGeometrie
 {
-    /// <summary>class Program</summary>
+	/// <summary>
+	/// class Program
+	/// </summary>
     public class Program
     {
         /// <summary>Main method </summary>
@@ -53,6 +55,11 @@ namespace Daimler.NX.BoolGeometrie
 
         }
 
+		/// <summary>
+		/// Gets the unload option.
+		/// </summary>
+		/// <param name="arg">The argument.</param>
+		/// <returns></returns>
         public static int GetUnloadOption(string arg)
         {
             //return System.Convert.ToInt32(Session.LibraryUnloadOption.Explicitly);
@@ -60,6 +67,10 @@ namespace Daimler.NX.BoolGeometrie
             //return System.Convert.ToInt32(Session.LibraryUnloadOption.AtTermination);
         }
 
+		/// <summary>
+		/// Unloads the library.
+		/// </summary>
+		/// <param name="arg">The argument.</param>
         public static void UnloadLibrary(string arg)
         {
             try

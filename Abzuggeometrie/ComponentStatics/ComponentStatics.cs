@@ -18,18 +18,28 @@ using NXOpen.Positioning;
 
 namespace Daimler.NX.BoolGeometrie
 {
-   
-   /// <summary>Component statics class </summary>
+
+	/// <summary>
+	/// Component statics class
+	/// </summary>
    public static class ComponentStatics
    {
 
+	   /// <summary>
+	   /// The get target
+	   /// </summary>
 	   public static List<Component> getTarget = null;
+	   /// <summary>
+	   /// The get input
+	   /// </summary>
 	   public static List<Body> getInput = null;
 
 	   #region static Methode
 	   //========================================================================================
 	  //================== Start GetRootComponent ===============================================
-	  //========================================================================================
+	  //=========================================================================================
+
+
 	  /// <summary>Get root component of a component.</summary>
 	  /// <param name="component">Component to get root component for.</param>
 	  /// <returns>Root component of component.</returns>
@@ -72,10 +82,12 @@ namespace Daimler.NX.BoolGeometrie
 	  //=================== Liste der Ziel-Parts ============================================
 	  //=====================================================================================
 
-	  /// <summary>Get all selected component to modify.</summary>
-	  /// <param name="inputList">The List of component.</param>
-	  /// </param>
-	  /// <returns>The List of the component.</returns>
+
+	  /// <summary>
+	  /// Gets the target component.
+	  /// </summary>
+	  /// <param name="targetList">The target list.</param>
+	  /// <returns></returns>
 	  public static List<Component> GetTargetComponent(List<Component> targetList)
 	  {
 		  // List der Parts die bearbeitete werden.
@@ -95,7 +107,6 @@ namespace Daimler.NX.BoolGeometrie
 
 	  /// <summary>Get all selected component to copy.</summary>
 	  /// <param name="inputList">The List of component.</param>
-	  /// </param>
 	  /// <returns>The List of the component.</returns>
 	  public static List<Body> GetInputComponent(List<Body> inputList)
 	  {
@@ -111,10 +122,16 @@ namespace Daimler.NX.BoolGeometrie
 	  //========================================================================================
 	  //================== Selektiertes Part "InWork" setzen ===================================
 	  //========================================================================================
-	  /// <summary>Get selected component to InWork Status.</summary>
-	  /// <param name="i">Counter of component.</param>
-	  /// </param>
-	  /// <returns>selected component.</returns>
+
+
+
+
+	  /// <summary>
+	  /// Sets the part work.
+	  /// </summary>
+	  /// <param name="i">The i.</param>
+	  /// <param name="theSession">The session.</param>
+	  /// <returns></returns>
 	  public static Component SetPartWork(int i,Session theSession)
 	  {
 		  Part workPart = theSession.Parts.Work;
@@ -137,13 +154,14 @@ namespace Daimler.NX.BoolGeometrie
 	  //========================================================================================
 	  //================== Feature_Groupe "_External_References" aktiv/inaktiv setzen ==========
 	  //========================================================================================
-	  /// <summary>Get selected component to InWork Status.</summary>
-	  /// <param name="TF">Status aktiv/deaktiv.</param>
-	  /// <param name="theSession">current NX Document.</param>
-	  /// <param name="feature_1">Name des ReferenzSet für Remove Geometrie.</param>
-	  /// <param name="feature_2">Name des ReferenzSet für BoolOperation .</param>
-	  /// </param>
-	  /// <returns>void</returns>
+
+	  /// <summary>
+	  /// Sets the group activ.
+	  /// </summary>
+	  /// <param name="TF">if set to <c>true</c> [tf].</param>
+	  /// <param name="theSession">The session.</param>
+	  /// <param name="feature_1">The feature_1.</param>
+	  /// <param name="feature_2">The feature_2.</param>
 	  public static void SetGroupActiv(bool TF, Session theSession,string feature_1,string feature_2)
 	  {
 		  
