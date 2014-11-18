@@ -1,0 +1,15 @@
+c:\users\wassel\documents\visual studio 2013\Projects\Abzuggeometrie\Abzuggeometrie\obj\Debug\Abzuggeometrie.csproj.GenerateResource.Cache
+C:\Users\wassel\documents\visual studio 2013\Projects\Abzuggeometrie\Abzuggeometrie\bin\Debug\BoolGeometrie.dll
+C:\Users\wassel\documents\visual studio 2013\Projects\Abzuggeometrie\Abzuggeometrie\bin\Debug\BoolGeometrie.pdb
+C:\Users\wassel\documents\visual studio 2013\Projects\Abzuggeometrie\Abzuggeometrie\obj\Debug\Daimler.NX.BoolGeometrie.Properties.Resources.resources
+C:\Users\wassel\documents\visual studio 2013\Projects\Abzuggeometrie\Abzuggeometrie\obj\Debug\BoolGeometrie.dll
+C:\Users\wassel\documents\visual studio 2013\Projects\Abzuggeometrie\Abzuggeometrie\obj\Debug\BoolGeometrie.pdb
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\bin\Debug\BoolGeometrie.dll
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\bin\Debug\BoolGeometrie.pdb
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\Daimler.NX.BoolGeometrie.Properties.Resources.resources
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\Abzuggeometrie.csproj.GenerateResource.Cache
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\BoolGeometrie.dll
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\BoolGeometrie.pdb
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\bin\Debug\NPlant.dll
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\bin\Debug\NPlant.Samples.dll
+D:\ProgramData\GitHub\Abzuggeometrie\Abzuggeometrie\obj\Debug\Abzuggeometrie.csprojResolveAssemblyReference.cache

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Daimler.NX.BoolGeometrie.ASM_GUI" Collapsed="true">
+    <Position X="3.5" Y="5.5" Width="3.25" />
+    <AssociationLine Name="theSession" Type="NXOpen.Session" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.312" Y="5.5" />
+        <Point X="4.312" Y="0.926" />
+        <Point X="3.25" Y="0.926" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="nxobject" Type="NXOpen.NXObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.312" Y="5.5" />
+        <Point X="4.312" Y="1.992" />
+        <Point X="3.25" Y="1.992" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="theUI" Type="NXOpen.UI" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.812" />
+        <Point X="7.125" Y="5.812" />
+        <Point X="7.125" Y="4.096" />
+        <Point X="8.75" Y="4.096" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.447" Y="0.051" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="theDlxFileName" Type="System.String" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="5.5" />
+        <Point X="5.25" Y="2.6" />
+        <Point X="7.75" Y="2.6" />
+        <Point X="7.75" Y="2.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.746" Y="0.254" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ownDllLocation" Type="System.String" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.938" Y="5.5" />
+        <Point X="4.938" Y="1.713" />
+        <Point X="7.25" Y="1.713" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.757" Y="0.131" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="theDialog" Type="NXOpen.BlockStyler.BlockDialog" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.812" />
+        <Point X="7.125" Y="5.812" />
+        <Point X="7.125" Y="3.096" />
+        <Point X="8.75" Y="3.096" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.404" Y="0.084" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ASEGUI" Type="NXOpen.BlockStyler.Group" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.312" Y="5.5" />
+        <Point X="4.312" Y="3.87" />
+        <Point X="2.75" Y="3.87" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="InputBodies" Type="NXOpen.BlockStyler.Group" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.312" Y="6.062" />
+        <Point X="4.312" Y="6.437" />
+        <Point X="2" Y="6.437" />
+        <Point X="2" Y="4.191" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="selectionBody" Type="NXOpen.BlockStyler.SelectObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.812" />
+        <Point X="7.125" Y="5.812" />
+        <Point X="7.125" Y="5.312" />
+        <Point X="8.75" Y="5.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.186" Y="0.123" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="TargetPart" Type="NXOpen.BlockStyler.Group" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.944" Y="6.062" />
+        <Point X="4.944" Y="6.437" />
+        <Point X="2" Y="6.437" />
+        <Point X="2" Y="4.191" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.164" Y="0.683" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="selectPart" Type="NXOpen.BlockStyler.SelectPartFromList" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.812" />
+        <Point X="7.125" Y="5.812" />
+        <Point X="7.125" Y="6.563" />
+        <Point X="7.25" Y="6.563" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.299" Y="-0.267" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAQJBJABgaCAAEAACCcgiQDAABA02AQwGMBQAUAKRQE=</HashCode>
+      <FileName>ASM_UI\ASM_GUI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="theSession" />
+      <Field Name="nxobject" />
+      <Field Name="theUI" />
+      <Field Name="theDlxFileName" />
+      <Field Name="ownDllLocation" />
+      <Field Name="theDialog" />
+      <Field Name="ASEGUI" />
+      <Field Name="InputBodies" />
+      <Field Name="selectionBody" />
+      <Field Name="TargetPart" />
+      <Field Name="selectPart" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Daimler.NX.BoolGeometrie.ComponentStatics">
+    <Position X="10.5" Y="0.5" Width="2.5" />
+    <AssociationLine Name="getTarget" Type="System.Collections.Generic.List&lt;T&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.281" Y="2.565" />
+        <Point X="11.281" Y="2.875" />
+        <Point X="13.438" Y="2.875" />
+        <Point X="13.438" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="getInput" Type="System.Collections.Generic.List&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="11.047" Y="2.565" />
+        <Point X="11.047" Y="3.562" />
+        <Point X="13" Y="3.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAACEAAADAAAAAAAAAAACAAAAAAAAAAAABgAAAAgA=</HashCode>
+      <FileName>ComponentStatics\ComponentStatics.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="getTarget" />
+      <Field Name="getInput" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Daimler.NX.BoolGeometrie.Program">
+    <Position X="11.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Collections.Generic.List&lt;T&gt;" Collapsed="true">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.533" />
+  </Class>
+  <Class Name="NXOpen.BlockStyler.Group" Collapsed="true">
+    <Position X="1.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.BlockStyler.SelectObject" Collapsed="true">
+    <Position X="8.75" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.BlockStyler.SelectPartFromList" Collapsed="true">
+    <Position X="7.25" Y="6.25" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.NXObject" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.String" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NXOpen.BlockStyler.BlockDialog" Collapsed="true">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.Session" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.UI" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
